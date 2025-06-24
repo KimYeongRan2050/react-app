@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState, useRef } from "react";
+import React, { useCallback, useMemo, useState, useRef, useEffect } from "react";
 
 const styles = {
   wrapper: {
@@ -36,6 +36,11 @@ function Calculator() {
   const handleChange1 = useCallback((e) => setNumber1(Number(e.target.value)), []);
   const handleChange2 = useCallback((e) => setNumber2(Number(e.target.value)), []);
 
+  useEffect(() => {
+    console.log('입력값이 변경', number1, number2);
+  }, [number1, number2]);
+
+  
   const focusInput = () => {
     inputRef.current.focus();
   };
