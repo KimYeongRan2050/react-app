@@ -2,9 +2,9 @@ import React, { useCallback, useMemo, useState, useRef, useEffect } from "react"
 
 const styles = {
   wrapper: {
-    display: 'flex',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
+    display: "flex",
+    justifyContent: "flex-start",
+    alignItems: "center",
   },
   inputBox: {
     margin: 0,
