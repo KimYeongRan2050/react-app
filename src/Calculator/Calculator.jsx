@@ -1,3 +1,4 @@
+import React, {} from "react";
 
 function Calculator(){
 
@@ -12,3 +13,5 @@ function Calculator(){
 
   );
 }
+
+export default Calculator;
